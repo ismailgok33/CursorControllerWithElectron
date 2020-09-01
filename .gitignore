@@ -1,0 +1,10 @@
+#directories
+bower_components
+node_modules
+dist
+İSG Eğitimi Heçkıd
+out2
+
+#files
+*.tgz
+*.log

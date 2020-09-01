@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script defer src="render.js"></script>
+
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+
+    <form>
+        <input id="x-coord" class="form-control text-input" placeholder="X-coord">
+        <input id="y-coord" class="form-control text-input" placeholder="Y-coord">
+        <input type="button" id="startBtn" value="start">
+        <input type="button" id="stopBtn" value="stop">
+    </form>
+    <div class="slidecontainer">
+        10 <input type="range" min="10" max="300" value="120" step="5" class="slider" id="timeRange"> 300
+        <h3 id="sliderValueDisp"></h3>
+    </div>
+    <div>
+        <h1 id="mousePos">coords</h1>
+    </div>
+    <div>
+        <p> Otomatik tıklama özelliğini kapatmak için "Stop" butonuna veya uygulama ekranındayken "ESC" tuşuna veya "q"
+            tuşuna basınız. </p>
+    </div>
+</body>
+
+
+</html>
